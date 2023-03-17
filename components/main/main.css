@@ -1,0 +1,32 @@
+.main {
+  width: 90vw;
+  max-width: 800px;
+  margin: auto;
+}
+.main__text {
+  font-size: 2rem;
+  line-height: 1.1;
+  color: whitesmoke;
+  margin: 100px auto 30px;
+  max-width: 500px;
+  text-align: center;
+  font-weight: 700;
+  filter: drop-shadow(2px 2px 3px slategrey);
+}
+.main__text_invisible {
+  display: none;
+}
+.main__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 10px;
+}
+.main__list-item {
+  width: 300px;
+  height: -moz-fit-content;
+  height: fit-content;
+}/*# sourceMappingURL=main.css.map */

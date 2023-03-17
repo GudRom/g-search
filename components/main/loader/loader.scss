@@ -1,0 +1,25 @@
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  display: none;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  border: 1px solid rgb(30, 30, 37);
+  box-shadow: 0 -5px 10px 10px #ffffff40 inset, 0 -5px 15px 10px #ffffff50 inset,
+    0 -2px 5px #ffffff80 inset, 0 -3px 2px #ffffffbb inset, 0 2px 0px #ffffff,
+    0 2px 3px #ffffff, 0 5px 5px #ffffff90, 0 10px 15px #ffffff60,
+    0 5px 10px 10px #ffffff40;
+  filter: blur(2px);
+  animation: 2s rotate linear infinite;
+
+  &_visible {
+    display: block;
+  }
+}

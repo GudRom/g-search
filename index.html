@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>G-Search - удобный поиск github-репозиториев</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">G-Search</h1>
+    </header>
+    <main class="main">
+      <p class="main__text">Найдётся всё</p>
+      <form class="form" name="search">
+        <div class="form__info-box">
+          <div class="form__input-box">
+            <input
+              class="form__search"
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Начните писать"
+            />
+            <span class="form__error">Минимум 2 символа.</span>
+          </div>
+        </div>
+        <button class="form__button" type="submit" >Искать</button>
+      </form>
+      <div class="loader"></div>
+      <ul class="main__list">
+        <p class="main__text main__text_invisible">Ничего не найдено</p>
+      </ul>
+    </main>
+    <template class="template">
+      <li class="main__list-item">
+        <div class="card">
+          <a
+            href=""
+            class="card__name"
+            rel="noopener noreferrer"
+            target="_blank"
+          ></a>
+          <p class="card__description"></p>
+          <div class="card__info-box">
+            <img class="card__avatar" loading="lazy"/>
+            <p class="card__author"></p>
+          </div>
+        </div>
+      </li>
+    </template>
+    <script src="./index.js"></script>
+  </body>
+</html>

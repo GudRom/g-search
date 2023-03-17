@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+@import url(./components/header/header.css);
+@import url(./components/main/main.css);
+@import url(./components/main/form/form.css);
+@import url(./components/main/card/card.css);
+@import url(./components/main/loader/loader.css);
+
+:root {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: #bdc3c7;
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media (max-width: 530px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  :root {
+    font-size: 8px;
+  }
+}

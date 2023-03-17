@@ -1,0 +1,72 @@
+.form {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.form__info-box {
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse;
+}
+.form__input-box {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.form__search {
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  font-size: 2em;
+  line-height: 1.2;
+  padding: 0.2em 0.5em;
+  width: 80%;
+  filter: drop-shadow(-2px 0px 3px rgb(30, 30, 37));
+}
+.form__search::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+.form__search::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+.form__search:focus {
+  outline-color: rgb(79, 88, 139);
+}
+.form__error {
+  color: rgb(207, 30, 10);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-left: 0.5em;
+  margin-top: 0.3em;
+  visibility: hidden;
+}
+.form__error_visible {
+  visibility: visible;
+}
+.form__button {
+  font-family: "Roboto", sans-serif;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  font-size: 1.8em;
+  line-height: 1.2;
+  font-weight: 300;
+  background-color: rgb(79, 88, 139);
+  filter: drop-shadow(-2px 0px 3px rgb(30, 30, 37));
+  transition: all 0.5s;
+  color: white;
+  padding: 0.4em 0.8em;
+  border-radius: 0.5em;
+}
+.form__button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.form__button:active {
+  filter: drop-shadow(0px 0px 1px rgb(30, 30, 37));
+  transition: all 0.5s;
+}/*# sourceMappingURL=form.css.map */

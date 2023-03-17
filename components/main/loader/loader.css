@@ -1,0 +1,20 @@
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  display: none;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  border: 1px solid rgb(30, 30, 37);
+  box-shadow: 0 -5px 10px 10px rgba(255, 255, 255, 0.2509803922) inset, 0 -5px 15px 10px rgba(255, 255, 255, 0.3137254902) inset, 0 -2px 5px rgba(255, 255, 255, 0.5019607843) inset, 0 -3px 2px rgba(255, 255, 255, 0.7333333333) inset, 0 2px 0px #ffffff, 0 2px 3px #ffffff, 0 5px 5px rgba(255, 255, 255, 0.5647058824), 0 10px 15px rgba(255, 255, 255, 0.3764705882), 0 5px 10px 10px rgba(255, 255, 255, 0.2509803922);
+  filter: blur(2px);
+  animation: 2s rotate linear infinite;
+}
+.loader_visible {
+  display: block;
+}/*# sourceMappingURL=loader.css.map */

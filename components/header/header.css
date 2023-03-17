@@ -1,0 +1,27 @@
+@keyframes twinkle {
+  from {
+    filter: drop-shadow(6px 6px 3px rgb(149, 186, 255));
+  }
+  50% {
+    filter: drop-shadow(10px -10px 3px rgb(94, 117, 160));
+  }
+  to {
+    filter: drop-shadow(-6px -6px 3px rgb(59, 72, 97));
+  }
+}
+.header {
+  background-color: transparent;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  background: linear-gradient(0deg, rgb(54, 112, 179), rgba(71, 55, 55, 0.8431372549));
+  animation: twinkle 2s infinite alternate-reverse ease-in-out 1s;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}/*# sourceMappingURL=header.css.map */
